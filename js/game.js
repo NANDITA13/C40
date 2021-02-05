@@ -88,9 +88,9 @@ play(){
              player.rank=player.rank+1;
              player.updateCarsAtEnd(player.rank);
              console.log(player.rank);
-             console.log(y);
+             y=height-player.distance;
              textSize(30);
-             text("Your Rank "+player.rank,width/2-80,y);
+             text("Your Rank: "+player.rank,width/2-100,y-50);
              gameState=2;
          } 
          drawSprites();    
